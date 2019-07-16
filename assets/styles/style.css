@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #888; }
+
+@keyframes box-reveal {
+  0% { }
+  100% {
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.5); } }
+
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase; }
+  .heading-primary-main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 40px; }
+  .heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.55rem; }
+
+.shortcut-box-text {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .shortcut-box-text-primary {
+    font-size: 3rem;
+    font-weight: 100; }
+  .shortcut-box-text-sub {
+    text-align: center; }
+
+.btn {
+  border: 5px;
+  border-color: #7B0100;
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.3s; }
+  .btn:hover {
+    background-color: #7B0100; }
+
+.nav-bar {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between; }
+  .nav-bar-links {
+    flex: 1; }
+  .nav-bar a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1.5vh 2vh 1.5vh 2vh;
+    margin: 2vh 1vh 2vh 1vh;
+    float: right;
+    outline: none; }
+  .nav-bar a:hover {
+    background-color: #7B0100; }
+  .nav-bar a:active {
+    background-color: #ad5050; }
+
+.nav-bar-logo {
+  flex: 1;
+  height: 6vh;
+  top: 25%;
+  left: 1%;
+  position: absolute; }
+
+.intro {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(88, 88, 88, 0.6), rgba(0, 0, 0, 0.6)), url(../img/welder-new.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed; }
+  .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.shortcut-buttons {
+  height: 50vh;
+  /**
+  background-color: $color-primary;
+  */
+  background-image: linear-gradient(to bottom, #7B0100 0%, #460011 0%, #7B0100 20%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+@media only screen and (max-width: 1920px) {
+  .shortcut-box {
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-basis: 40rem; } }
+
+.shortcut-box {
+  height: 75%;
+  flex-basis: 30rem;
+  flex-shrink: 0;
+  margin-left: 1%;
+  margin-right: 1%;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  cursor: pointer; }
+  .shortcut-box img {
+    top: 10%; }
+  .shortcut-box:hover {
+    animation-duration: 0.5s;
+    animation-name: box-reveal;
+    animation-fill-mode: forwards; }
+
+.about-us {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  /**
+  background-color: $color-intense-grey;
+  */
+  background: linear-gradient(to bottom, #424242 0%, #1f1f1f 0%, #424242 20%);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .about-us-textbox {
+    padding: 3.5rem;
+    color: white;
+    margin-left: 10rem;
+    margin-right: 10rem; }
+  .about-us-textbox-sub {
+    font-size: 1.8rem; }
+
+.slogan-parallax {
+  background-attachment: fixed;
+  display: flex;
+  height: 50vh;
+  background-image: linear-gradient(to bottom, rgba(88, 88, 88, 0.6), rgba(70, 70, 70, 0.6)), url(../img/welding.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff; }
+
+.s-p-text {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1rem; }
+
+.footer {
+  background-color: #000;
+  display: flex; }
+
+.company-info {
+  flex: 1;
+  order: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 5% 2% 5%;
+  font-size: 1.4rem; }
+  .company-info-header-primary {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem; }
+
+.contact-box {
+  flex: 1;
+  order: 1;
+  margin: 2% 5% 2% 5%; }
+  .contact-box-people {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .contact-box-header {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem; }
+  .contact-box-person {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    max-width: 50%;
+    font-weight: 200; }
+    .contact-box-person img {
+      width: 1.5rem;
+      margin-right: 1rem; }
+    .contact-box-person a {
+      text-decoration: none;
+      color: inherit; }
+    .contact-box-person-name {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.4rem;
+      font-size: 2rem; }
+    .contact-box-person-phone {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.4rem; }
+    .contact-box-person-email {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.4rem; }
+
+@media only screen and (max-width: 1920px) {
+  .address-box-sub,
+  .company-info-header-sub,
+  .contact-box-person {
+    font-size: 2rem; }
+  .shortcut-box {
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-basis: 40rem; } }
+
+@media only screen and (max-width: 1364px) {
+  .shortcut-buttons {
+    flex-direction: column; } }
+
+@media only screen and (max-width: 1150px) {
+  .shortcut-box {
+    flex-direction: row;
+    flex-basis: 17rem; }
+    .shortcut-box img {
+      margin-right: 3rem; }
+  .shortcut-buttons {
+    flex-wrap: nowrap;
+    height: 87vh; }
+  /**
+  Ponizej bardziej na mobilki
+  */
+  .heading-primary-main {
+    letter-spacing: 2rem;
+    font-size: 5rem; }
+  .heading-primary-sub {
+    letter-spacing: 0.55rem; }
+  .s-p-text {
+    font-size: 3rem; }
+  .shortcut-box img {
+    transform: scale(0.8); }
+  .about-us-textbox {
+    padding: 0.5rem 0 3.5rem 0;
+    margin: 0 3rem 0 3rem; } }
+
+@media only screen and (max-width: 412px) {
+  .footer {
+    flex-direction: column; } }
+
+.address-box {
+  flex: 1;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 5% 2% 5%;
+  font-size: 1.8rem;
+  font-weight: 200; }
+  .address-box-header {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem; }
+  .address-box-wrap {
+    display: flex;
+    flex-direction: row; }
+  .address-box img {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-right: 1rem;
+    flex: 1; }
+  .address-box-sub {
+    flex: 3; }
+
+.arrow-down {
+  top: 80%;
+  left: 50%;
+  position: absolute;
+  width: 3.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  animation: waiting 3s infinite; }
+
+.arrow-down:hover {
+  transform: scale(1.15); }
+
+@keyframes waiting {
+  0% {
+    transform: translate(-50%, 0rem); }
+  50% {
+    transform: translate(-50%, 0rem); }
+  60% {
+    transform: translate(-50%, 1rem); }
+  80% {
+    transform: translate(-50%, 0.5rem); }
+  90% {
+    transform: translate(-50%, 1rem); }
+  100% {
+    transform: translate(-50%, 0rem); } }
+
+.small-intro {
+  height: 50vh;
+  background-image: linear-gradient(to bottom, rgba(88, 88, 88, 0.6), rgba(0, 0, 0, 0.6)), url(../img/welder-new.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .small-intro-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.off-color {
+  background: linear-gradient(to bottom, #7B0100 0%, #3a0606 0%, #7B0100 20%); }
+
+.offer-intro {
+  height: 30vh !important; }
+
+.map {
+  height: 50vh;
+  background-color: yellow; }

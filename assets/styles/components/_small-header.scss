@@ -1,0 +1,27 @@
+.small-intro {
+  height: 50vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba($light-grey, 0.6),
+    rgba($color-black, 0.6)),
+    url(../img/welder-new.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  &-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+}
+
+.off-color {
+  background: linear-gradient(
+    to bottom,
+    $color-primary 0%,
+    #3a0606 0%,
+    $color-primary 20%
+  );
+}

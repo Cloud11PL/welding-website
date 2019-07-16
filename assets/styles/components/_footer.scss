@@ -1,0 +1,163 @@
+.footer {
+  //height: 50vh;
+  background-color: $color-black;
+  display: flex;
+}
+
+.company-info {
+  flex: 1;
+  order: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 5% 2% 5%;
+  font-size: 1.4rem;
+  &-header-primary {
+    font-size: 3rem; 
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }   
+}
+
+
+.contact-box {
+  flex: 1;
+  order: 1;
+  margin: 2% 5% 2% 5%;
+  &-people{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &-header {
+    font-size: 3rem; 
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  &-person{
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    max-width: 50%;
+    font-weight: 200;
+    & img{
+      width: 1.5rem;
+      margin-right: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    &-name {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.4rem;
+      font-size: 2rem;
+    }
+    &-phone {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.4rem;
+    }
+    &-email {
+      display: flex;
+      align-items: center;  
+      margin-bottom: 0.4rem;    
+    }
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .address-box-sub,
+  .company-info-header-sub,
+  .contact-box-person {
+    font-size: 2rem;
+  }
+  .shortcut-box {
+    margin-left: 2%;
+    margin-right: 2%;
+    flex-basis: 40rem; 
+  }
+}
+
+@media only screen and (max-width: 1364px) {
+  .shortcut-buttons {
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width: 1150px) {
+  .shortcut-box {
+    flex-direction: row;
+    flex-basis: 17rem;
+    & img {
+      margin-right: 3rem;
+    }
+  }
+  .shortcut-buttons {
+    flex-wrap: nowrap;
+    height: 87vh;
+  }
+
+  /**
+  Ponizej bardziej na mobilki
+  */
+
+
+  .heading-primary-main {
+    letter-spacing: 2rem;
+    font-size: 5rem;
+  }
+
+  .heading-primary-sub {
+    letter-spacing: 0.55rem;
+  }
+
+  .s-p-text {
+    font-size: 3rem;
+  }
+
+  .shortcut-box img {
+    transform: scale(0.8);
+  }
+
+  .about-us-textbox {
+    padding: 0.5rem 0 3.5rem 0;
+    margin: 0 3rem 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .footer{
+    flex-direction: column;
+  } 
+}
+
+.address-box {
+  flex: 1;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 5% 2% 5%;
+  font-size: 1.8rem;
+  font-weight: 200;
+  &-header{
+    font-size: 3rem; 
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  &-wrap{
+    display:flex;
+    flex-direction: row;
+  }
+  & img{
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-right: 1rem;
+    flex: 1;
+  }
+  &-sub{
+    flex:3;
+  }
+}

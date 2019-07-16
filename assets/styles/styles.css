@@ -1,0 +1,111 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #888;
+}
+
+.nav-bar {
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-box {
+  margin: 0;
+  padding: 0;
+  float: left;
+  height: 100%;
+}
+
+.logo-box img {
+  height: 100%;
+}
+
+.nav-bar-links {
+  z-index: 1;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 3vh;
+  float: right;
+}
+
+.nav-bar a:hover {
+  color: rgb(173, 80, 80);
+}
+
+.nav-bar a.active {
+  color: #7B0100;
+}
+
+.intro {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(88, 88, 88, 0.85),
+    rgba(70, 70, 70, 0.85)),
+    url(../img/welder.jpg);
+  background-size: cover;
+  background-position: top;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 40px;
+}
+
+.heading-primary-sub {
+  display:block;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 15px;
+}
+
+.shortcut-links {
+  height: 50vh;
+  background-color: #7B0100;
+}
+
+.about-us {
+  height: 70vh;
+  background-color: #ffffff;
+}
+
+.map {
+  height: 50vh;
+  background-color: yellow;
+}
+
+.footer {
+  height: 30vh;
+  background-color: black;
+}

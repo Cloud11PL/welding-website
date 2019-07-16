@@ -1,0 +1,34 @@
+.arrow-down {
+  top: 80%;
+  left: 50%;
+  position: absolute;
+  width: 3.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  animation: waiting 3s infinite;
+}
+
+.arrow-down:hover {
+  transform: scale(1.15);
+}
+
+@keyframes waiting {
+  0% {
+    transform: translate(-50%,0rem);
+  }
+  50% {
+    transform: translate(-50%,0rem);
+  }
+  60% {
+    transform: translate(-50%,1rem);
+  }
+  80%{
+    transform: translate(-50%,0.5rem);
+  }
+  90%{
+    transform: translate(-50%,1rem);
+  }
+  100%{
+    transform: translate(-50%,0rem);
+  }
+}

@@ -1,0 +1,25 @@
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/header";
+@import "components/shortcut-buttons";
+@import "components/about-us";
+@import "components/slogan-parallax";
+@import "components/footer";
+@import "components/arrow-down";
+@import "components/small-header";
+
+@import "pages/home"; 
+@import "pages/offer-page"; 
+
+.map {
+  height: 50vh;
+  background-color: yellow;
+} 

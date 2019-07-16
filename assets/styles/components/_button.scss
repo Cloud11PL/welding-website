@@ -1,0 +1,16 @@
+.btn {
+  border: 5px;
+  border-color: $color-primary;
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.3s;
+
+  &:hover{
+    background-color: $color-primary;
+  }
+}
